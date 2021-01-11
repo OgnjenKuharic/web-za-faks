@@ -1,0 +1,230 @@
+*{
+	padding: 0; margin: 0;
+}
+body, html {
+	font-family: 'Oswald', sans-serif;font-size: 16px; 
+	background-color: #ffffff;
+	height: 100vh;
+}
+
+.wrapanje-main-slike {
+    max-width: 1440px;
+	margin: auto;
+	background-image:url("images/header.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 80px;
+	height: 612px;	
+}
+.content-wrap {
+	height:100%; max-width:960px; margin:0 auto -80px;
+}
+
+
+header {
+    display: block;
+    width: 100%;
+	height: 300px;
+}
+
+.eu-figure{ margin: 16px; padding: 0; float: right; width: 195px;
+}
+.eu-figurecapiton{margin: 16px; width: 180px;
+	
+}
+
+#nav-i-eu{display: block; width: 100%; height: 80px; float: left;}
+
+
+.logo {display: block; float: left; padding: 20px 20px 10px 50px;  text-align: center;}
+.text1{ display: block; margin-bottom: 5px; position: relative;
+	color: white; font-weight: 100; font-size: 26px; letter-spacing: 8px; animation: text1 3s 1;
+}
+
+.text2{
+	color:#FFAE15; font-weight: 700; font-size: 36px; letter-spacing: 10px; animation: text2 3s 1;
+}
+@keyframes text1 { 
+	0%{
+		color:#1B1B1B;
+		margin-bottom: -20px;
+	}
+	30%{
+		letter-spacing: 15px;
+		margin-bottom: -20px;
+	}
+	85%{
+		letter-spacing: 8px;
+	}
+}
+
+@keyframes text2 { 
+	0%{ color: #1B1B1B;
+		opacity: 0;
+	}
+	30%{
+		letter-spacing: 0px;
+		opacity: 0.5;
+	}
+	85%{
+		letter-spacing: 15px;
+	}
+}
+
+ul {
+	list-style-type: none;
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	height: 32px;
+	color: #686868;
+	text-align: center;
+	padding: 24px 16px ;
+	text-decoration: none;
+	background-color:#FFFFFF;
+}
+li a:hover {
+	color: #FFAE15;
+	background-color: #f5f5f5;
+	margin-top: -5px;
+}
+
+
+
+.folder {display: block; width: 100%; border-radius: 1em 1em 0em 0em; background-image: url("images/1px_proziran.png"); background-repeat: repeat;	
+}
+.folder video{ margin: 16px;
+}
+.folder-reference {display: block; width: 100%; border-radius: 1em 1em 0em 0em; background-image: url("images/1px_proziran.png"); background-repeat: repeat;	
+}
+.folder-reference img {width: 22%; float: left; margin: 0 16px 16px 16px;
+}
+.folder-reference a {
+	color: #FFAE15;
+	margin: 16px 16px 0 16px;
+	line-height: 1em;
+	letter-spacing: 1px;
+	font-size: 16px
+}
+	
+
+
+h1 {
+	color:#686868;
+	font-size: 2em;
+}
+h2 {
+	color: #686868;
+	padding: 10px 0 0 0;
+	margin: 16px;
+	font-size: 1.5em;
+}
+h3 {
+	color: #686868;
+	margin: 16px;
+	font-size: 1.1em;
+}
+p {
+	color: #686868;
+	margin: 16px;
+	line-height: 1em;
+	letter-spacing: 1px;
+	font-size: 16px
+}
+
+
+#contact {
+	margin: 1em
+}
+input[type=text], input[type=email], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 95%;
+}
+
+input[type=submit] {
+    display: block;
+	background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	width: 25%;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+footer {
+	float: left;
+	width: 100%;
+	height: 70px;
+	background-color: #333;
+	clear: both;
+	color: white;
+	text-align: center;
+}
+footer p {
+	color:#E5E5E5;
+}
+img {
+	width: 100%;
+}
+
+.galerija{
+	width: 100%;
+	display: grid; grid-auto-flow: dense;
+	grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh
+				   "1fr 1fr 1fr 1fr 1fr" 33.33vh
+				   "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+	grid-gap: 5px;
+}
+.galerija .box {
+	position: relative;
+	background-color:#B4B4B4;
+}
+
+.galerija .box img {
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.galerija .box.a{
+	grid-row: span 2;
+}
+
+.galerija .box.b,
+.galerija .box.f,
+.galerija .box.h,
+.galerija .box.j
+{
+	grid-column: span 2;
+}
+
+@media screen and (max-width: 600px) {
+	figure {
+		width: 90%;
+		margin: 1em;
+	}	
+}
+
